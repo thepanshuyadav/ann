@@ -67,7 +67,7 @@ class NeuralNetwork:
         return np.argmax(ff, axis=1)
 
 nn = NeuralNetwork()
-nn.add_layer(Layer(2, 3))
-nn.add_layer(Layer(3, 3))
-nn.add_layer(Layer(3, 2))
+nn.add_layer(Layer(2, 4))
+nn.add_layer(Layer(4, 4))
+nn.add_layer(Layer(4, 2))
 nn.predict([[0, 0], [0, 1], [1, 0], [1, 1]])
